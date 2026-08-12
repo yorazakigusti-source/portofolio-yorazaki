@@ -63,15 +63,18 @@ export default function Navbar() {
 
         {/* Download CV */}
         <div className="hidden md:block">
-          <a 
-            href="/cv.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-emerald-500 text-black font-bold text-xs tracking-wider rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 uppercase transition-all flex items-center gap-2 group"
-          >
-            <span>Download CV</span>
-            <i className="fas fa-download text-xs group-hover:translate-y-0.5 transition-transform"></i>
-          </a>
+          <a
+          href="/cv.pdf"
+          download="CV_Yorazaki.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-5 py-2.5 bg-cyan-400 hover:bg-cyan-300 border border-cyan-300 text-neutral-950 font-bold text-xs tracking-wider rounded-lg uppercase transition-all shadow-md shadow-cyan-500/20 inline-flex items-center gap-2 cursor-pointer"
+        >
+          DOWNLOAD CV
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -107,14 +110,16 @@ export default function Navbar() {
           ))}
           <a 
             href="/cv.pdf" 
-            target="_blank" 
+            download="CV_Yorazaki.pdf"
+            target="_blank"
             rel="noopener noreferrer"
-            className="block text-center w-full py-2.5 bg-gradient-to-r from-cyan-500 to-emerald-500 text-black font-bold text-xs tracking-wider rounded-lg uppercase mt-4"
+            className="px-6 py-3.5 font-bold text-xs tracking-wider rounded-lg border border-blue-400 hover:opacity-90 uppercase transition-all shadow-lg shadow-blue-500/40 inline-flex items-center justify-center gap-2 cursor-pointer"
+            style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
           >
-            Download CV
+            DOWNLOAD CV ↓
           </a>
         </div>
       )}
-    </header>
+    </header>    
   );
 }
