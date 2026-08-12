@@ -113,7 +113,7 @@ export default function Navbar() {
           {/* Download CV (Mobile - Warna Cyan Senada) */}
           <a 
             href="/cv.pdf" 
-            download="CV_Yorazaki.pdf"
+            download="cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full mt-2 py-3 bg-cyan-400 hover:bg-cyan-300 border border-cyan-300 text-neutral-950 font-bold text-xs tracking-wider rounded-lg uppercase transition-all shadow-md shadow-cyan-500/20 flex items-center justify-center gap-2 cursor-pointer"

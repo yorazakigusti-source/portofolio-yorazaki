@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import CanvasBackground from './components/CanvasBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -10,14 +9,20 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingSidebar from './components/FloatingSidebar';
+import Preloader from './components/Preloader';
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: false, mirror: true });
   }, []);
 
   return (
     <div className="min-h-screen bg-[#0d0d0e] text-neutral-100 font-sans selection:bg-cyan-500 selection:text-black overflow-x-hidden antialiased scroll-smooth relative">
+
+      {/* Preloader Animation */}
+      {loading && <Preloader onFinish={() => setLoading(false)} />}
 
       <style>{`
         @keyframes floatAnimation {
