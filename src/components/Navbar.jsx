@@ -33,6 +33,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#0d0d0e]/60 border-b border-neutral-900/40">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between relative">
+        {/* Logo */}
         <a 
           href="#home" 
           className="font-serif text-xl tracking-wider font-bold text-cyan-400 hover:opacity-80 transition-opacity"
@@ -40,7 +41,7 @@ export default function Navbar() {
           YG.
         </a>
 
-        {/* Navigation Menu (Tengah) */}
+        {/* Navigation Menu (Desktop) */}
         <nav className="hidden md:flex items-center gap-8 text-sm tracking-wide font-medium absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
@@ -61,23 +62,23 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Download CV */}
+        {/* Download CV (Desktop) */}
         <div className="hidden md:block">
           <a
-          href="/cv.pdf"
-          download="CV_Yorazaki.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-5 py-2.5 bg-cyan-400 hover:bg-cyan-300 border border-cyan-300 text-neutral-950 font-bold text-xs tracking-wider rounded-lg uppercase transition-all shadow-md shadow-cyan-500/20 inline-flex items-center gap-2 cursor-pointer"
-        >
-          DOWNLOAD CV
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-        </a>
+            href="/cv.pdf"
+            download="CV_Yorazaki.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2.5 bg-cyan-400 hover:bg-cyan-300 border border-cyan-300 text-neutral-950 font-bold text-xs tracking-wider rounded-lg uppercase transition-all shadow-md shadow-cyan-500/20 inline-flex items-center gap-2 cursor-pointer"
+          >
+            DOWNLOAD CV
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
         </div>
 
-        {/* Mobile Toggle */}
+        {/* Mobile Toggle Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-neutral-400 hover:text-white focus:outline-none"
@@ -108,15 +109,19 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+
+          {/* Download CV (Mobile - Warna Cyan Senada) */}
           <a 
             href="/cv.pdf" 
             download="CV_Yorazaki.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3.5 font-bold text-xs tracking-wider rounded-lg border border-blue-400 hover:opacity-90 uppercase transition-all shadow-lg shadow-blue-500/40 inline-flex items-center justify-center gap-2 cursor-pointer"
-            style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+            className="w-full mt-2 py-3 bg-cyan-400 hover:bg-cyan-300 border border-cyan-300 text-neutral-950 font-bold text-xs tracking-wider rounded-lg uppercase transition-all shadow-md shadow-cyan-500/20 flex items-center justify-center gap-2 cursor-pointer"
           >
-            DOWNLOAD CV ↓
+            DOWNLOAD CV
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
           </a>
         </div>
       )}

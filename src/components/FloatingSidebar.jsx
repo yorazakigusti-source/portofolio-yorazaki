@@ -9,7 +9,7 @@ export default function FloatingSidebar() {
   ];
 
   return (
-    <div className="fixed right-8 bottom-0 z-40 hidden md:flex flex-col items-center gap-6 after:w-[1px] after:h-28 after:bg-gradient-to-b after:from-neutral-700 after:to-transparent">
+    <div className="fixed right-3 bottom-4 md:right-6 md:bottom-6 flex flex-col gap-3 z-50 bg-neutral-900/90 p-2.5 rounded-2xl border border-neutral-800/80 backdrop-blur-md shadow-lg">
       {socialLinks.map((item, index) => (
         <a
           key={index}
