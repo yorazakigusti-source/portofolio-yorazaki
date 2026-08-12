@@ -44,9 +44,9 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-24 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 relative">
       <div className="space-y-6" data-aos="fade-right">
         <p className="text-xs font-bold tracking-[0.2em] text-cyan-400 uppercase">AVAILABLE FOR FREELANCE</p>
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
-          Hi, I am <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+        <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
+          Hi, I am{" "}
+          <span className="text-cyan-400 drop-shadow-[0_0_25px_rgba(34,211,238,0.8)]">
             Yorazaki Gusti.
           </span>
         </h1>
