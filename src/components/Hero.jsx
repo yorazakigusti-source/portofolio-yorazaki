@@ -57,9 +57,13 @@ export default function Hero() {
           Building intelligent, scalable digital solutions through structured frameworks, clean interface development, and data-driven computational models.
         </p>
         <div className="pt-4 flex items-center gap-4">
-          <a href="#projects" onMouseMove={handleMagneticMove} onMouseLeave={handleMagneticReset}
-             className="px-6 py-3.5 bg-gradient-to-r from-cyan-500 to-emerald-500 text-black font-bold text-xs tracking-wider rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 uppercase flex items-center gap-2 group">
-            View My Work <span className="group-hover:translate-y-1 transition-transform">↓</span>
+          <a 
+            href="#projects" 
+            onMouseMove={handleMagneticMove} 
+            onMouseLeave={handleMagneticReset}
+            className="px-6 py-3.5 bg-cyan-500 border border-cyan-400 text-slate-950 font-bold text-xs tracking-wider rounded-lg hover:bg-cyan-400 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] uppercase transition-all"
+          >
+            View My Work ↓
           </a>
           <a href="#contact" onMouseMove={handleMagneticMove} onMouseLeave={handleMagneticReset}
              className="px-6 py-3.5 border border-neutral-800 text-neutral-300 font-bold text-xs tracking-wider rounded-lg hover:bg-neutral-900 hover:text-white hover:border-neutral-700 uppercase">
