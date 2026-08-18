@@ -1,16 +1,61 @@
-# React + Vite
+# Yorazaki Gusti — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=black)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portofolio-yorazaki.vercel.app/)
 
-Currently, two official plugins are available:
+Portofolio web pribadi interaktif yang dirancang untuk menampilkan berbagai proyek di bidang **Data Science, Machine Learning, dan Software Engineering**. Dibangun menggunakan React.js dan Tailwind CSS dengan konsep *Modern Dark Theme & Cyan Accent*.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Demo:** [portofolio-yorazaki.vercel.app](https://portofolio-yorazaki.vercel.app/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Fitur Utama
 
-## Expanding the ESLint configuration
+- **⚡ Fast Performance & Smooth Animations:** Ditenagai Vite, AOS (Animate On Scroll), dan efek pergerakan partikel HTML Canvas.
+- **✨ Interactive Preloader:** *Splash screen* animasi pembuka dengan indikator persentase *loading*.
+- **📱 Full Responsive Design:** Tampilan fleksibel yang otomatis menyesuaikan layar Desktop, Tablet, hingga Mobile (HP).
+- **✉️ Working Contact Form:** Form kontak yang terhubung langsung ke Inbox Email via Web3Forms.
+- **📄 Instant CV Download:** Akses unduh kurikulum vitae (PDF) langsung dari Navbar & Hero section.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack & Alat
+
+| Kategori | Teknologi |
+| :--- | :--- |
+| **Frontend Framework** | React.js, Vite |
+| **Styling & UI** | Tailwind CSS, FontAwesome Icons |
+| **Animasi & FX** | AOS (Animate On Scroll), Custom HTML5 Canvas Background |
+| **Form Handler** | Web3Forms |
+| **Deployment** | Vercel |
+| **Bahasa Utama & ML** | Python (Scikit-Learn, PyTorch/XGBoost), Java, JavaScript, C/C++ |
+
+---
+
+## Struktur Folder
+
+```text
+portofolio-yorazaki/
+├── public/
+│   ├── cv.pdf             # File CV
+│   ├── favicon.ico        # Favicon Tab Browser
+│   └── og-image.png       # Thumbnail Social Share
+├── src/
+│   ├── components/
+│   │   ├── CanvasBackground.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Experience.jsx
+│   │   ├── FloatingSidebar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Preloader.jsx
+│   │   └── Projects.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+└── tailwind.config.js
